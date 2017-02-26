@@ -1409,8 +1409,10 @@ class Path(text_type):
     # in-place re-writing, courtesy of Martijn Pieters
     # http://www.zopatista.com/python/2013/11/26/inplace-file-rewriting/
     @contextlib.contextmanager
-    def in_place(self, mode='r', buffering=-1, encoding=None, errors=None,
-            newline=None, backup_extension=None):
+    def in_place(
+            self, mode='r', buffering=-1, encoding=None, 
+            errors=None,newline=None, backup_extension=None
+            ):
         """
         A context in which a file may be re-written in-place with new content.
 
