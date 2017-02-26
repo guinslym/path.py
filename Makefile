@@ -1,11 +1,11 @@
 setup:
 	pip install -e .
-	pip install -r dev_requirements.txt
+	pip install -r tests/requirements.txt
 	@echo "Setup completed"
 
 requirements:
 	@echo "Installing the dev_requirements"
-	pip install -r dev_requirements.txt
+	pip install -r tests/requirements.txt
 	@echo "Requirements installed"
 
 ci: test lint typing
